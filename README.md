@@ -227,8 +227,8 @@ If you just want to interact with your own private server for testing, you won't
 - You already have access to your `Server IP` and `App Port` configured in your `server.cfg` file.
 - You can find your `playerToken` in the sqlite3 database file `player.tokens.db` with the following command on a Linux server. `sqlite3 player.tokens.db "select * from data;" ".exit"`
 - You will get output like so: `xxxxxxxxxxxxxxxxx|yyyyyyyyy`
-    - `xxxxxxxxxxxxxxxxx` is the `playerId`
-    - `yyyyyyyyy` is the `playerToken`. (It can be a positive or negative integer.)
+  - `xxxxxxxxxxxxxxxxx` is the `playerId`
+  - `yyyyyyyyy` is the `playerToken`. (It can be a positive or negative integer.)
 - As an admin you can use the command `lookingat_debug` to show/hide the entity id of what you are currently looking at. I like to bind it to a key with `bind o lookingat_debug`.
 
 ### Using the Command Line Tool
@@ -288,9 +288,9 @@ node cli/index.js <command>
 The Rust game server enforces a limit on how many connections can be made to the Rust+ websocket, and how many connections can be made by the same IP Address at once.
 
 - Max Connections: `500` is default
-    - Can be adjusted with server var `app.maxconnections`
+  - Can be adjusted with server var `app.maxconnections`
 - Max Connections per IP: `5` is default
-    - Can be adjusted with server var `app.maxconnectionsperip`
+  - Can be adjusted with server var `app.maxconnectionsperip`
 
 ## Rate Limits
 
@@ -301,12 +301,12 @@ The token bucket gives you a maximum amount of tokens, and replenishes them over
 Here is a list of the rate limits enforced by the Rust game server:
 
 - Requests per IP Address
-    - `50 tokens limit, 15 tokens replenished per second.`
+  - `50 tokens limit, 15 tokens replenished per second.`
 - Requests per Player ID
-    - `25 tokens limit, 3 tokens replenished per second.`
+  - `25 tokens limit, 3 tokens replenished per second.`
 - Requests for Server Pairing
-    - `5 tokens limit, 0.1 tokens replenished per second.`
-    
+  - `5 tokens limit, 0.1 tokens replenished per second.`
+
 Rate limits can be found in the `CompanionServer.Listener` class in `Assembly-CSharp.dll` from the game server files.
 
 Below is the token cost per request type:
@@ -336,7 +336,7 @@ If you want this project taken down, feel free to message me! However this proje
 I'm looking forward to seeing all of the projects the Rust community come up with! Here are some ideas I came up with:
 
 - Discord Bot
-    - Sync Team Chat in-game and on Discord.
-    - Send messages to Discord when Smart Alarms are triggered.
-    - Send messages to Discord when Cargo, Heli or Crate events spawn on the map.
-    - Controlling Smart Devices via Discord messages.
+  - Sync Team Chat in-game and on Discord.
+  - Send messages to Discord when Smart Alarms are triggered.
+  - Send messages to Discord when Cargo, Heli or Crate events spawn on the map.
+  - Controlling Smart Devices via Discord messages.
