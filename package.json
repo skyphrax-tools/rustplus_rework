@@ -1,6 +1,6 @@
 {
   "name": "rustplus_rework",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Unofficial NodeJS library for controlling Smart Switches in the PC game Rust REWORK: https://github.com/liamcottle/rustplus.js",
   "main": "./rustplus.js",
   "bin": {
