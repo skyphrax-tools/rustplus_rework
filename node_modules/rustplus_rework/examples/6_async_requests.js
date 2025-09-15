@@ -1,4 +1,4 @@
-const RustPlus = require('rustplus_rework');
+const RustPlus = require('@liamcottle/rustplus.js');
 var rustplus = new RustPlus('ip', 'port', 'playerId', 'playerToken');
 
 // wait until connected before sending commands
