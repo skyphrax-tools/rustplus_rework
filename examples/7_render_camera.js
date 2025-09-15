@@ -1,4 +1,4 @@
-const RustPlus = require('rustplus_rework');
+const RustPlus = require('@liamcottle/rustplus.js');
 const fs = require("fs");
 var rustplus = new RustPlus('ip', 'port', 'playerId', 'playerToken');
 

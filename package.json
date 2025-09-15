@@ -1,6 +1,6 @@
 {
-  "name": "rustplus_rework",
-  "version": "0.0.8",
+  "name": "@skyphrax/rustplus.js_rework",
+  "version": "0.0.1",
   "description": "Unofficial NodeJS library for controlling Smart Switches in the PC game Rust",
   "main": "rustplus.js",
   "bin": {
@@ -37,7 +37,6 @@
     "express": "^4.17.1",
     "jimp": "^0.22.7",
     "protobufjs": "^7.1.2",
-    "rustplus_rework": "^0.0.7",
     "uuid": "^9.0.0",
     "ws": "^8.3.0"
   }

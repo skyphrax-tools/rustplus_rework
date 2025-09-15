@@ -73,26 +73,8 @@ async function registerWithRustPlus(authToken, expoPushToken) {
     })
 }
 
-async function findFreePort() {
-    return await new Promise((resolve, reject) => {
-        const net = require("net");
-        const srv = net.createServer();
-
-        srv.listen(0, "127.0.0.1", () => {
-            const addr = srv.address();
-            if (!addr || typeof addr === "string") {
-                return reject(new Error("addr error"));
-            }
-            const p = addr.port;
-            srv.close(() => resolve(p));
-        });
-
-        srv.on("error", reject);
-    });
-}
-
 async function linkSteamWithRustPlus() {
-    return new Promise(async (resolve, reject) => {
+    return new Promise((resolve, reject) => {
         const app = express();
 
         // register pair web page
@@ -123,7 +105,7 @@ async function linkSteamWithRustPlus() {
          * Start the express server before Google Chrome is launched.
          * If the port is updated, make sure to also update it in pair.html
          */
-        const port = await findFreePort;
+        const port = 3000;
         server = app.listen(port, async () => {
             /**
              * FIXME: Google Chrome is launched with Web Security disabled.
