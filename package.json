@@ -1,6 +1,6 @@
 {
   "name": "rustplus_rework",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Unofficial NodeJS library for controlling Smart Switches in the PC game Rust REWORK: https://github.com/liamcottle/rustplus.js",
   "main": "./rustplus.js",
   "bin": {
@@ -22,7 +22,7 @@
     "smart alarm",
     "team chat"
   ],
-  "author": "Liam Cottle",
+  "author": "Skyphrax",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/skyphrax-tools/rustplus_rework/issues"
