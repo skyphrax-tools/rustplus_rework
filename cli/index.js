@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
-import axios from "axios";
-import express from "express";
-import { v4 as uuidv4 } from "uuid";
-import commandLineArgs from "command-line-args";
-import commandLineUsage from "command-line-usage";
-import ChromeLauncher from "chrome-launcher";
-import path from "path";
-import fs from "fs";
-import AndroidFCM from "@liamcottle/push-receiver/src/android/fcm";
-import PushReceiverClient from "@liamcottle/push-receiver/src/client";
+const axios = require('axios');
+const express = require('express');
+const { v4: uuidv4 } = require('uuid');
+const commandLineArgs = require('command-line-args');
+const commandLineUsage = require('command-line-usage');
+const ChromeLauncher = require('chrome-launcher');
+const path = require('path');
+const fs = require('fs');
+const AndroidFCM = require('@liamcottle/push-receiver/src/android/fcm');
+const PushReceiverClient = require("@liamcottle/push-receiver/src/client");
 
 let server;
 let fcmClient;

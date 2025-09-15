@@ -1,5 +1,4 @@
-import RustPlus from '../rustplus.js';
-import RustPlus from "../rustplus";
+const RustPlus = require('../rustplus');
 var rustplus = new RustPlus('ip', 'port', 'playerId', 'playerToken');
 
 function delay(time) {

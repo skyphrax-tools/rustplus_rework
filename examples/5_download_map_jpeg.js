@@ -1,6 +1,5 @@
-import RustPlus from '../rustplus.js';
-import fs from "fs";
-import RustPlus from "@liamcottle/rustplus.js";
+const fs = require('fs');
+const RustPlus = require('@liamcottle/rustplus.js');
 var rustplus = new RustPlus('ip', 'port', 'playerId', 'playerToken');
 
 // wait until connected before sending commands

@@ -1,6 +1,5 @@
-import RustPlus from '../rustplus.js';
-import RustPlus from "../rustplus";
-import Camera from "../camera";
+const RustPlus = require('../rustplus');
+const Camera = require('../camera');
 var rustplus = new RustPlus('ip', 'port', 'playerId', 'playerToken');
 
 function delay(time) {

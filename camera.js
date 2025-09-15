@@ -1,5 +1,7 @@
-import { EventEmitter  } from "events";
-import Jimp from "jimp";
+"use strict";
+
+const { EventEmitter } = require("events");
+const Jimp = require("jimp");
 
 class Camera extends EventEmitter {
 
@@ -420,4 +422,4 @@ class IndexGenerator {
 
 }
 
-export default Camera;
+module.exports = Camera;

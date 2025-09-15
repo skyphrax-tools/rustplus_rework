@@ -1,8 +1,10 @@
-import path from "path";
-import WebSocket from "ws";
-import protobuf from "protobufjs";
-import { EventEmitter  } from "events";
-import Camera from "./camera.js";
+"use strict";
+
+const path = require('path');
+const WebSocket = require('ws');
+const protobuf = require("protobufjs");
+const { EventEmitter } = require('events');
+const Camera = require('./camera');
 
 class RustPlus extends EventEmitter {
 
@@ -375,4 +377,4 @@ class RustPlus extends EventEmitter {
 
 }
 
-export default RustPlus;
+module.exports = RustPlus;

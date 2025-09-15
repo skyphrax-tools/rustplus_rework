@@ -1,6 +1,5 @@
-import RustPlus from '../rustplus.js';
-import RustPlus from "@liamcottle/rustplus.js";
-import fs from "fs";
+const RustPlus = require('@liamcottle/rustplus.js');
+const fs = require("fs");
 var rustplus = new RustPlus('ip', 'port', 'playerId', 'playerToken');
 
 rustplus.on('connected', async () => {
