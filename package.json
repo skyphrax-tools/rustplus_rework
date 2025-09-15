@@ -1,14 +1,14 @@
 {
-  "name": "rustplus_rework",
-  "version": "0.0.4",
-  "description": "Unofficial NodeJS library for controlling Smart Switches in the PC game Rust REWORK: https://github.com/liamcottle/rustplus.js",
-  "main": "./rustplus.js",
+  "name": "rustplus_work",
+  "version": "0.0.6",
+  "description": "Unofficial NodeJS library for controlling Smart Switches in the PC game Rust",
+  "main": "rustplus.js",
   "bin": {
     "rustplus": "./cli/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skyphrax-tools/rustplus_rework.git"
+    "url": "git+https://github.com/skyphrax-tools/rustplus_work.git"
   },
   "keywords": [
     "rust",
@@ -25,9 +25,9 @@
   "author": "Skyphrax",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/skyphrax-tools/rustplus_rework/issues"
+    "url": "https://github.com/skyphrax-tools/rustplus_work/issues"
   },
-  "homepage": "https://github.com/skyphrax-tools/rustplus_rework#readme",
+  "homepage": "https://github.com/skyphrax-tools/rustplus_work#readme",
   "dependencies": {
     "@liamcottle/push-receiver": "^0.0.3",
     "axios": "^1.2.2",
@@ -39,12 +39,5 @@
     "protobufjs": "^7.1.2",
     "uuid": "^9.0.0",
     "ws": "^8.3.0"
-  },
-  "type": "module",
-  "exports": {
-    ".": "./rustplus.js"
-  },
-  "engines": {
-    "node": ">=18.18"
   }
 }
