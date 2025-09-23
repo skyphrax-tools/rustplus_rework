@@ -1,6 +1,6 @@
 {
   "name": "@skyphrax/rustplus.js_rework",
-  "version": "0.0.2",
+  "version": "0.2.9",
   "description": "Unofficial NodeJS library for controlling Smart Switches in the PC game Rust",
   "main": "rustplus.js",
   "bin": {
